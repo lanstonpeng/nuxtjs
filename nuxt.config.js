@@ -14,7 +14,10 @@ export default {
         content: 'This is an awesome description of my Nuxt app',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, {
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    }],
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -27,5 +30,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
+
+  css: [
+  ]
 
 };
